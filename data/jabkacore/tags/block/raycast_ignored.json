@@ -1,7 +1,9 @@
 {
     "values": [
-        "#minecraft:air",
-        "minecraft:light",
-        "minecraft:structure_void"
+        "#minecraft:replaceable",
+        "#minecraft:signs",
+        "#minecraft:banners",
+        "#minecraft:buttons",
+        "#minecraft:flowers"
     ]
 }

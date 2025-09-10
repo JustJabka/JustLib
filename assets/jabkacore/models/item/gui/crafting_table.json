@@ -2,24 +2,25 @@
 	"textures": {
 		"0": "jabkacore:item/gui/crafting_table"
 	},
-	"elements": [
+	"elements": [ 	 
 		{
-			"from": [-16, -16, 15.9375],
-			"to": [32, 32, 16],
+			"from": [7.25, 0, -13.25],
+			"to": [7.251, 18.25, 30.5],
 			"faces": {
-				"north": {"uv": [11, 11, 0, 0], "rotation": 180, "texture": "#0"},
-				"south": {"uv": [0, 0, 11, 11], "texture": "#0"}
+				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#0"}
 			}
 		}
 	],
 	"gui_light": "front",
 	"display": {
-		"ground": {
-			"scale": [0, 0, 0]
-		},
 		"gui": {
-			"translation": [-72, -26, -80],
-			"scale": [3.66, 3.66, 3.66]
+			"rotation": [0, -90, 0],
+			"translation": [-70, 21, 1],
+			"scale": [0.0001, 3.985, 3.985]
+		},
+		"ground" :{
+			"scale": [0, 0, 0]
 		}
 	}
 }

@@ -4,9 +4,9 @@ scoreboard players set #reset_items jabkacore.gui 1
 scoreboard players operation #id jabkacore.id = @s jabkacore.id
 tag @a[predicate=jabkacore:id,limit=1] add jabkacore.gui.this
 
-# Shift detect 
-# execute store success score #shift jabkacore.gui if items entity @a[tag=jabkacore.gui.this,limit=1] container.* *[minecraft:custom_data~{jabkacore.gui.item:true}]
-# execute if score #shift jabkacore.gui matches 1.. run say 1
+# Quick Craft
+# execute store success score #quick_craft jabkacore.gui if items entity @a[tag=jabkacore.gui.this,limit=1] container.* *[minecraft:custom_data~{jabkacore.gui.item:true}]
+# execute if score #quick_craft jabkacore.gui matches 1.. run say 1
 
 # Craft
 execute if score @s jabkacore.gui.active_recipe matches 1 unless items block ~ ~ ~ container.16 * run function jabkacore:internal/crafting_table/crafts/craft

@@ -27,3 +27,6 @@ execute unless score #inited jabkacore.gui matches 1 run function jabkacore:inte
 scoreboard objectives add jabkacore.math dummy
 scoreboard objectives add const dummy
 execute unless score #inited jabkacore.math matches 1 run function jabkacore:internal/math/init
+
+# Movement Module
+scoreboard objectives add jabkacore.movement dummy
