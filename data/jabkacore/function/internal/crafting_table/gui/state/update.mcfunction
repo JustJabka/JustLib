@@ -1,2 +1,0 @@
-execute store result score #update jabkacore.gui run data modify entity @s data."jabkacore.gui.compare" set from block ~ ~ ~ Items
-execute if score #update jabkacore.gui matches 1 run function jabkacore:internal/crafting_table/crafts/main

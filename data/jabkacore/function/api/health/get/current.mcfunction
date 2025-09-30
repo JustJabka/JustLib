@@ -1,1 +1,1 @@
-return run execute store result score @s jabkacore.health.current run scoreboard players get @s jabkacore.hearts
+return run execute store result score @s jabkacore.health.current run scoreboard players get @s health

@@ -1,7 +1,8 @@
 {
   "pack": {
     "description": "Core for my datapacks with features I use often.",
-    "max_format": 87,
-    "min_format": 87
+    "pack_format": 88,
+    "max_format": 88,
+    "min_format": 88
   }
 }

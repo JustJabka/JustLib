@@ -1,3 +1,0 @@
-data modify entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:barrel"},Age:0s,OnGround:false},distance=..2,limit=1] Item set value {id:"minecraft:glow_item_frame",components:{"minecraft:item_model":"jabkacore:crafting_table/block","minecraft:custom_data":{jabkacore.gui.crafting_table:true},"minecraft:item_name":{"translate":"block.jabkacore.crafting_table","fallback":"Advanced Crafting Table"},"minecraft:entity_data":{id:"minecraft:glow_item_frame",Tags:["jabkacore.gui.crafting_table"],Invisible:true,Silent:true,Invulnerable:true}}}
-scoreboard players set #reset_items jabkacore.gui 1
-kill @s

@@ -1,12 +1,16 @@
-# Main
-scoreboard objectives add jabkacore.main dummy
+# Shared
+scoreboard objectives add main dummy
+scoreboard objectives add const dummy
 
-scoreboard objectives add jabkacore.air air
-scoreboard objectives add jabkacore.armor armor
-scoreboard objectives add jabkacore.food food
-scoreboard objectives add jabkacore.hearts health
+scoreboard objectives add air air
+scoreboard objectives add armor armor
+scoreboard objectives add food food
+scoreboard objectives add health health
 
-scoreboard objectives add jabkacore.id dummy
+scoreboard objectives add deaths deathCount
+scoreboard objectives add on_respawn custom:time_since_death
+
+execute unless score #inited main matches 1 run function jabkacore:internal/shared/init
 
 # Health Module
 scoreboard objectives add jabkacore.health dummy
@@ -18,14 +22,8 @@ scoreboard objectives add jabkacore.health.percent dummy
 scoreboard objectives add jabkacore.effect.freezing dummy
 scoreboard objectives add jabkacore.effect.drowning dummy
 
-# GUI Module
-scoreboard objectives add jabkacore.gui dummy
-scoreboard objectives add jabkacore.gui.active_recipe dummy
-execute unless score #inited jabkacore.gui matches 1 run function jabkacore:internal/crafting_table/init
-
 # Math Module
 scoreboard objectives add jabkacore.math dummy
-scoreboard objectives add const dummy
 execute unless score #inited jabkacore.math matches 1 run function jabkacore:internal/math/init
 
 # Movement Module
