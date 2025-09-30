@@ -1,5 +1,5 @@
 {
-    "type": "block",
+    "type": "minecraft:block",
     "pools": [
         {
             "rolls": 1,
@@ -12,7 +12,7 @@
                             "name": "minecraft:contents",
                             "conditions": [
                                 {
-                                    "condition": "match_tool",
+                                    "condition": "minecraft:match_tool",
                                     "predicate": {
                                         "predicates": {
                                             "minecraft:custom_data": {

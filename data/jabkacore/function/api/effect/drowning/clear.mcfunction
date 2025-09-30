@@ -1,0 +1,1 @@
+scoreboard players set @s jabkacore.effect.drowning 0

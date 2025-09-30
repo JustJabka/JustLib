@@ -1,0 +1,2 @@
+execute if entity @s[tag=jabkacore.effect.drowning] run return run function jabkacore:internal/effect/drowning/remove
+execute if entity @s[tag=jabkacore.effect.freezing] run function jabkacore:internal/effect/freezing/remove

@@ -7,3 +7,4 @@
 - ![Effects Module🪄](https://github.com/JustJabka/JabkaCore/wiki/Effects-Module%F0%9F%AA%84)
 - ![Health Module❤️](https://github.com/JustJabka/JabkaCore/wiki/Health-Module%E2%9D%A4%EF%B8%8F)
 - ![Math Module🧮](https://github.com/JustJabka/JabkaCore/wiki/Math-Module%F0%9F%A7%AE)
+- ![Movement Module🏃](https://github.com/JustJabka/JabkaCore/wiki/Movement-Module%F0%9F%8F%83)

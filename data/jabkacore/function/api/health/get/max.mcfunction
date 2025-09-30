@@ -1,0 +1,1 @@
+return run execute store result score @s jabkacore.health.max run attribute @s minecraft:max_health get

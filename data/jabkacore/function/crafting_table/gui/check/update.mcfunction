@@ -1,2 +1,0 @@
-execute store result score #update main_score run data modify entity @s item.components."minecraft:custom_data"."jabkacore.compare" set from block ~ ~ ~ Items
-execute if score #update main_score matches 1 run function jabkacore:crafting_table/crafts/main

@@ -1,0 +1,40 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "effects": {
+                                    "minecraft:instant_health": {
+                                        "amplifier": 252
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "score": "jabkacore.health",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#healed"
+                            }
+                        },
+                        "range": 1
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "jabkacore:internal/health/heal/reset"
+    }
+}

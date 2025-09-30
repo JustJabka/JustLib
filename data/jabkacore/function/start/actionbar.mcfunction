@@ -1,1 +1,0 @@
-title @s actionbar {"nbt":"actionbar[]","storage":"jabkacore:main","interpret":true,"separator":" "}
