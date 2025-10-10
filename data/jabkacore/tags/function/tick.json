@@ -1,6 +1,5 @@
 {
     "values": [
-        "jabkacore:internal/effect/tick",
-        "jabkacore:internal/recipes/tick"
+        "jabkacore:internal/effect/tick"
     ]
 }
