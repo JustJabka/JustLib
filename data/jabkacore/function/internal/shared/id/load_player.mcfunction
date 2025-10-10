@@ -1,0 +1,1 @@
+execute store result score @s id run function jabkacore:api/shared/id/get

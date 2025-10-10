@@ -8,4 +8,4 @@ for i in range(table_length):
     cos_table.append(round(cos, 4))
 
 with open("cos_table.mcfunction", "w") as file:
-    file.write(f"data modify storage jabkacore:main math.cos set value {"[" + ",".join(str(x) for x in cos_table)}" + "]")
+    file.write(f"data modify storage jabkacore:math cos set value {"[" + ",".join(str(x) for x in cos_table)}" + "]")

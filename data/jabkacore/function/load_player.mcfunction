@@ -1,0 +1,1 @@
+function #jabkacore:load_player
