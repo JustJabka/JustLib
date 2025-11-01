@@ -1,0 +1,1 @@
+execute at @s run function jabkacore:internal/movement/motion/apply_rotated

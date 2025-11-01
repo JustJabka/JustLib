@@ -1,0 +1,1 @@
+$data modify storage jabkacore:recipes recipe[-1].index set from storage jabkacore:recipes registered.$(id)

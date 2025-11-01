@@ -1,0 +1,1 @@
+return run execute store result score $out main run data get entity @s playerGameType

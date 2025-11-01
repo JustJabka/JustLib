@@ -1,0 +1,2 @@
+setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:{translate:"block.jabkacore.crafting_table"},components:{"minecraft:custom_data":{"jabkacore.recipes":true}}}
+execute align xyz run summon minecraft:item_display ~0.5 ~0.5 ~0.5 {Tags:["jabkacore.recipes"],item:{id:"minecraft:poisonous_potato",count:1,components:{"minecraft:item_model":"jabkacore:crafting_table/block"}},brightness:{sky:15,block:0},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0001f,1.0001f,1.0001f]}}

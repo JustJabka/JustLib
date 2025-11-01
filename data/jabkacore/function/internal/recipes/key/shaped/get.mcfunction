@@ -1,0 +1,1 @@
+$data modify storage jabkacore:recipes craft set from storage jabkacore:recipes shaped."$(key)"

@@ -8,4 +8,4 @@ execute if score #dx jabkacore.movement matches 0 if score #dz jabkacore.movemen
 function jabkacore:internal/math/angle/directory
 
 # Calculate
-function jabkacore:internal/movement/calc
+function jabkacore:internal/movement/calc/unit_vec

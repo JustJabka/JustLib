@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:item_display,tag=jabkacore.recipes] at @s run function jabkacore:internal/recipes/main
+execute if score #clear main matches 1 run function jabkacore:internal/recipes/items/clear
