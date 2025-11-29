@@ -7,8 +7,8 @@ execute unless entity @s[tag=jabkacore.recipes.active] run return fail
 execute if block ~ ~ ~ minecraft:barrel[open=false] run return run function jabkacore:internal/recipes/handler/close
 
 # Main logic
-scoreboard players operation #player id = @s id
-execute as @a if score @s id = #player id run item modify entity @s player.cursor jabkacore:recipes/clear_bundle
+scoreboard players operation #this id = @s id
+item modify entity @a[predicate=jabkacore:shared/id] player.cursor jabkacore:recipes/clear_bundle
 scoreboard players set #clear main 1
 
 ## Get changes
@@ -24,7 +24,7 @@ function jabkacore:internal/recipes/craft/get
 execute if data entity @s data{craft:true} \
     unless items block ~ ~ ~ container.16 *[minecraft:custom_data~{"jabkacore.recipes.result":true}] \
     if data storage jabkacore:recipes craft \
-    as @a if score @s id = #player id \
+    as @a[predicate=jabkacore:shared/id] \
 run function jabkacore:internal/recipes/craft/start
 
 ## Updating crafting state

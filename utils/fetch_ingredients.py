@@ -41,4 +41,4 @@ with open(index_file, "w") as f:
     json.dump(item_indexes, f, indent=2)
 
 with open("ingredients.mcfunction", "w") as file:
-    file.write(f"data modify storage jabkacore:recipes recipe.registered set value {json.dumps(item_indexes, separators=(',', ':'), indent=None)}")
+    file.write(f"data modify storage jabkacore:recipes registered set value {json.dumps(item_indexes, separators=(',', ':'), indent=None)}")
