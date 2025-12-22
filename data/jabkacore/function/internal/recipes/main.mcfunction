@@ -6,11 +6,12 @@ execute if block ~ ~ ~ minecraft:barrel[open=false] run return run function jabk
 
 # Main logic
 scoreboard players operation #this id = @s id
-scoreboard players set #clear main 1
 
 ## Get changes
 execute store result score #changed main run data modify entity @s data.compare set from block ~ ~ ~ Items
 execute unless score #changed main matches 1 run return fail
+
+scoreboard players set #clear main 1
 
 ## Return items
 execute in jabkacore:main positioned 0 0 0 run function jabkacore:internal/recipes/items/return
