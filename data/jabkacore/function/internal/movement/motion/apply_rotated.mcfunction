@@ -11,7 +11,7 @@ function jabkacore:internal/movement/motion/axis
 
 # Applying motion
 execute in jabkacore:main run item replace block 0 0 0 container.0 from entity @s saddle
-loot replace entity @s saddle loot jabkacore:item/movement/motion
+loot replace entity @s saddle loot jabkacore:internal/movement/motion
 
 # Reverting changes
 function jabkacore:api/shared/gamemode/set

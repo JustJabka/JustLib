@@ -1,0 +1,45 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glow_item_frame",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "jabkacore:crafting_table",
+                                "minecraft:item_name": {
+                                    "translate": "block.jabkacore.crafting_table",
+                                    "fallback": "Advanced Crafting Table"
+                                },
+                                "minecraft:entity_data": {
+                                    "id": "minecraft:glow_item_frame",
+                                    "Tags": [
+                                        "jabkacore.block"
+                                    ],
+                                    "Item": {
+                                        "id": "minecraft:poisonous_potato",
+                                        "count": 1,
+                                        "components": {
+                                            "minecraft:custom_data": {
+                                                "jabkacore.block.place": "jabkacore:api/recipes/place",
+                                                "jabkacore.block.loot_table": "jabkacore:blocks/crafting_table"
+                                            },
+                                            "!minecraft:item_model": {}
+                                        }
+                                    },
+                                    "Invisible": true,
+                                    "Invulnerable": true,
+                                    "Silent": true
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

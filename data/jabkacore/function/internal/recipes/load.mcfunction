@@ -6,7 +6,7 @@ data modify storage jabkacore:recipes template set value [\
 ]
 
 data modify storage jabkacore:recipes shared_properties set value {\
-    "minecraft:custom_data":{"jabkacore.recipes.null":true},\
+    "minecraft:custom_data":{"jabkacore.recipes.dummy":true,"jabkacore.clear":true},\
     "minecraft:tooltip_display":{"hide_tooltip":true},\
     "!minecraft:item_model":{},\
     "!minecraft:item_name":{},\
@@ -19,7 +19,7 @@ data modify storage jabkacore:recipes placeholder set value {id:"minecraft:poiso
 data modify storage jabkacore:recipes gui set value {Slot:26b,id:"minecraft:poisonous_potato",count:1}
 data modify storage jabkacore:recipes gui.components set from storage jabkacore:recipes shared_properties
 data remove storage jabkacore:recipes gui.components."!minecraft:item_model"
-data modify storage jabkacore:recipes gui.components merge value {"minecraft:item_model":"jabkacore:crafting_table/gui"}
+data modify storage jabkacore:recipes gui.components merge value {"minecraft:item_model":"jabkacore:gui/crafting_table"}
 
 data modify storage jabkacore:recipes template[] merge from storage jabkacore:recipes placeholder
 

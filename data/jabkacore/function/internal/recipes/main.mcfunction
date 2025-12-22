@@ -1,6 +1,4 @@
 # Destroy
-execute unless block ~ ~ ~ minecraft:barrel run return run function jabkacore:internal/recipes/security/destroy
-
 execute unless entity @s[tag=jabkacore.recipes.active] run return fail
 
 # On close
@@ -8,12 +6,12 @@ execute if block ~ ~ ~ minecraft:barrel[open=false] run return run function jabk
 
 # Main logic
 scoreboard players operation #this id = @s id
-item modify entity @a[predicate=jabkacore:shared/id] player.cursor jabkacore:recipes/clear_bundle
 scoreboard players set #clear main 1
 
 ## Get changes
 execute store result score #changed main run data modify entity @s data.compare set from block ~ ~ ~ Items
 execute unless score #changed main matches 1 run return fail
+
 ## Return items
 execute in jabkacore:main positioned 0 0 0 run function jabkacore:internal/recipes/items/return
 

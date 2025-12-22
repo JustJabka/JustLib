@@ -6,7 +6,7 @@
         "item_filter": {
             "predicates": {
                 "minecraft:custom_data": {
-                    "jabkacore.recipes.null": true
+                    "jabkacore.clear": true
                 }
             }
         },
