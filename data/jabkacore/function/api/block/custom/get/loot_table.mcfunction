@@ -1,3 +1,0 @@
-data modify storage jabkacore:main block.loot_table set from entity @s[type=minecraft:marker] data."jabkacore.block.loot_table"
-data modify storage jabkacore:main block.loot_table set from entity @s[type=minecraft:item_display] item.components."minecraft:custom_data"."jabkacore.block.loot_table"
-data modify storage jabkacore:main block.loot_table set from entity @s[type=minecraft:glow_item_frame] Item.components."minecraft:custom_data"."jabkacore.block.loot_table"

@@ -1,2 +1,0 @@
-data modify storage jabkacore:main block.place set from entity @s[type=minecraft:marker] data."jabkacore.block.place"
-data modify storage jabkacore:main block.place set from entity @s[type=minecraft:glow_item_frame] Item.components."minecraft:custom_data"."jabkacore.block.place"

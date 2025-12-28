@@ -20,20 +20,14 @@
                                     "Tags": [
                                         "jabkacore.block"
                                     ],
-                                    "Item": {
-                                        "id": "minecraft:poisonous_potato",
-                                        "count": 1,
-                                        "components": {
-                                            "minecraft:custom_data": {
-                                                "jabkacore.block.place": "jabkacore:api/recipes/place",
-                                                "jabkacore.block.loot_table": "jabkacore:blocks/crafting_table"
-                                            },
-                                            "!minecraft:item_model": {}
-                                        }
+                                    "data": {
+                                        "jabkacore.block.place": "jabkacore:api/recipes/place",
+                                        "jabkacore.block.loot_table": "jabkacore:blocks/crafting_table"
                                     },
                                     "Invisible": true,
                                     "Invulnerable": true,
-                                    "Silent": true
+                                    "Silent": true,
+                                    "Fixed": true
                                 }
                             }
                         }
