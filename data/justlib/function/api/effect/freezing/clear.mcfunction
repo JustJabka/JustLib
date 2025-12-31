@@ -1,0 +1,1 @@
+scoreboard players set @s justlib.effect.freezing 0

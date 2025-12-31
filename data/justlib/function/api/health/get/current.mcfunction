@@ -1,0 +1,1 @@
+return run execute store result score @s justlib.health.current run scoreboard players get @s health

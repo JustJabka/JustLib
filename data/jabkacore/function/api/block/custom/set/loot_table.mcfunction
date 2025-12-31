@@ -1,2 +1,0 @@
-$execute if entity @s[tag=jabkacore.block.manual_drop] run return run loot spawn ~ ~ ~ loot $(loot_table)
-$execute as @e[type=minecraft:item,nbt={Age:0s,OnGround:false},distance=..5] unless items entity @s contents *[minecraft:custom_data~{"jabkacore.clear":true}] run loot replace entity @s contents loot $(loot_table)

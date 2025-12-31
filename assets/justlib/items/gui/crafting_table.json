@@ -1,0 +1,23 @@
+{
+    "oversized_in_gui": true,
+    "hand_animation_on_swap": false,
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:display_context",
+        "cases": [
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "justlib:item/gui/crafting_table"
+                },
+                "when": [
+                    "gui"
+                ]
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/air"
+        }
+    }
+}

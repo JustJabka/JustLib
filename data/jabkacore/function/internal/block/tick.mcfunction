@@ -1,1 +1,0 @@
-execute as @e[type=#jabkacore:block/custom,tag=jabkacore.block] at @s run function jabkacore:internal/block/custom/tick

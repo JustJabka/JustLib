@@ -1,0 +1,27 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:default_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "minecraft:barrel",
+                                "predicates": {
+                                    "minecraft:custom_data": {
+                                        "justlib.recipes": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "justlib:internal/recipes/entry"
+    }
+}

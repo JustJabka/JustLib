@@ -1,0 +1,1 @@
+$return run data get storage justlib:math sin[$(index)] 1000

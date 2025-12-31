@@ -1,1 +1,0 @@
-execute as @e[type=minecraft:item_display,tag=jabkacore.recipes] at @s run function jabkacore:internal/recipes/main

@@ -1,1 +1,0 @@
-data remove storage jabkacore:main stack

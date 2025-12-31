@@ -1,8 +1,0 @@
-{
-    "values": [
-        "jabkacore:internal/shared/tick",
-        "jabkacore:internal/effect/tick",
-        "jabkacore:internal/block/tick",
-        "jabkacore:internal/recipes/tick"
-    ]
-}

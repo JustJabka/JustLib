@@ -3,8 +3,9 @@
 </p>
 
 ## Documentation
-- ![Crafting Table Module🔨](https://github.com/JustJabka/JabkaCore/wiki/Crafting-Table-Module%F0%9F%94%A8)
-- ![Effects Module🪄](https://github.com/JustJabka/JabkaCore/wiki/Effects-Module%F0%9F%AA%84)
-- ![Health Module❤️](https://github.com/JustJabka/JabkaCore/wiki/Health-Module%E2%9D%A4%EF%B8%8F)
-- ![Math Module🧮](https://github.com/JustJabka/JabkaCore/wiki/Math-Module%F0%9F%A7%AE)
-- ![Movement Module🏃](https://github.com/JustJabka/JabkaCore/wiki/Movement-Module%F0%9F%8F%83)
+- [Block Module🧱](https://github.com/JustJabka/JustLib/wiki/Block-Module%F0%9F%A7%B1)
+- [Recipes Module🔨](https://github.com/JustJabka/JustLib/wiki/Crafting-Table-Module%F0%9F%94%A8)
+- [Effects Module🪄](https://github.com/JustJabka/JustLib/wiki/Effects-Module%F0%9F%AA%84)
+- [Health Module❤️](https://github.com/JustJabka/JustLib/wiki/Health-Module%E2%9D%A4%EF%B8%8F)
+- [Math Module🧮](https://github.com/JustJabka/JustLib/wiki/Math-Module%F0%9F%A7%AE)
+- [Movement Module🏃](https://github.com/JustJabka/JustLib/wiki/Movement-Module%F0%9F%8F%83)

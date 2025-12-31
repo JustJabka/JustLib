@@ -1,1 +1,0 @@
-execute as @e[type=minecraft:marker,tag=jabkacore.effect.marker] at @s run function jabkacore:internal/effect/remove

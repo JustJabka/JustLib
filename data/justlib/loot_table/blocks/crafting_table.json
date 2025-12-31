@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glow_item_frame",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "justlib:crafting_table",
+                                "minecraft:item_name": {
+                                    "translate": "block.justlib.crafting_table",
+                                    "fallback": "Advanced Crafting Table"
+                                },
+                                "minecraft:entity_data": {
+                                    "id": "minecraft:glow_item_frame",
+                                    "Tags": [
+                                        "justlib.block"
+                                    ],
+                                    "data": {
+                                        "justlib.block.place": "justlib:api/recipes/place",
+                                        "justlib.block.loot_table": "justlib:blocks/crafting_table"
+                                    },
+                                    "Invisible": true,
+                                    "Invulnerable": true,
+                                    "Silent": true,
+                                    "Fixed": true
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
