@@ -1,0 +1,1 @@
+$return run data get storage justlib:math cos[$(index)] 1000

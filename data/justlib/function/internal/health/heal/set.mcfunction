@@ -1,0 +1,1 @@
+$attribute @s minecraft:max_health modifier add justlib:health.heal $(need_to_heal) add_value

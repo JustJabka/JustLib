@@ -1,1 +1,0 @@
-return run execute store result score @s jabkacore.health.current run scoreboard players get @s health

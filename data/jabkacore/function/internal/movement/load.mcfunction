@@ -1,1 +1,0 @@
-scoreboard objectives add jabkacore.movement dummy

@@ -1,0 +1,2 @@
+execute if entity @s[tag=justlib.effect.drowning] run return run function justlib:internal/effect/drowning/remove
+execute if entity @s[tag=justlib.effect.freezing] run function justlib:internal/effect/freezing/remove

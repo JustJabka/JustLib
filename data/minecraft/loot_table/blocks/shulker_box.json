@@ -25,19 +25,19 @@
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:shulker_box",
                             "functions": [
                                 {
                                     "function": "minecraft:copy_components",
-                                    "source": "block_entity",
                                     "include": [
                                         "minecraft:custom_name",
                                         "minecraft:container",
                                         "minecraft:lock",
                                         "minecraft:container_loot"
-                                    ]
+                                    ],
+                                    "source": "block_entity"
                                 }
-                            ]
+                            ],
+                            "name": "minecraft:shulker_box"
                         }
                     ]
                 }

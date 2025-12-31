@@ -1,0 +1,1 @@
+execute as @e[type=#justlib:block/custom,tag=justlib.block] at @s run function justlib:internal/block/custom/tick

@@ -1,1 +1,0 @@
-$return run data get storage jabkacore:math cos[$(index)] 1000

@@ -1,1 +1,0 @@
-$attribute @s minecraft:max_health modifier add jabkacore:health.heal $(need_to_heal) add_value

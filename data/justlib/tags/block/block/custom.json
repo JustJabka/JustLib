@@ -1,0 +1,9 @@
+{
+    "values": [
+        "minecraft:barrel",
+        "minecraft:ender_chest",
+        "minecraft:structure_void",
+        "minecraft:campfire",
+        "minecraft:spawner"
+    ]
+}

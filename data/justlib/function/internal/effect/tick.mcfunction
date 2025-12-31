@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:marker,tag=justlib.effect.marker] at @s run function justlib:internal/effect/remove

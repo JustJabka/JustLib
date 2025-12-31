@@ -1,9 +1,0 @@
-{
-    "values": [
-        "jabkacore:internal/shared/load",
-        "jabkacore:internal/health/load",
-        "jabkacore:internal/effect/load",
-        "jabkacore:internal/math/load",
-        "jabkacore:internal/movement/load"
-    ]
-}

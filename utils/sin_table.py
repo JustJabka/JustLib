@@ -8,4 +8,4 @@ for i in range(table_length):
     sin_table.append(round(sin, 4))
 
 with open("sin_table.mcfunction", "w") as file:
-    file.write(f"data modify storage jabkacore:math sin set value {"[" + ",".join(str(x) for x in sin_table)}" + "]")
+    file.write(f"data modify storage justlib:math sin set value {"[" + ",".join(str(x) for x in sin_table)}" + "]")

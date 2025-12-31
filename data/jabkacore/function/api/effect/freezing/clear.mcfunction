@@ -1,1 +1,0 @@
-scoreboard players set @s jabkacore.effect.freezing 0

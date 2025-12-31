@@ -1,0 +1,2 @@
+# Basicly format is [pos1,ingridients1,pos2,ingridients2,pos3,ingridients3...pos9,ingridients9]
+data modify storage justlib:recipes shaped set value {"[0,657,9,654,18,657]":{id:"minecraft:diamond",count:1}}

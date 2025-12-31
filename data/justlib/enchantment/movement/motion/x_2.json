@@ -1,0 +1,45 @@
+{
+    "description": {
+    "text": "This enchantment is JustLib internal pls dont use it",
+"color": "yellow"
+  },
+  "supported_items": "minecraft:poisonous_potato",
+  "weight": 1,
+  "max_level": 100,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "any"
+  ],
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "coordinate_scale": [
+            0.0001,
+            0.0001,
+            0.0001
+          ],
+          "magnitude": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 1
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,120 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:poisonous_potato",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:equippable": {
+                                    "slot": "saddle",
+                                    "equip_sound": "minecraft:intentionally_empty",
+                                    "allowed_entities": "minecraft:player"
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "justlib:movement/motion/x_2": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[0]"
+                                },
+                                "justlib:movement/motion/x_1": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[1]"
+                                },
+                                "justlib:movement/motion/x": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[2]"
+                                },
+                                "justlib:movement/motion/-x_2": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[3]"
+                                },
+                                "justlib:movement/motion/-x_1": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[4]"
+                                },
+                                "justlib:movement/motion/-x": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[5]"
+                                },
+                                "justlib:movement/motion/y_2": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[6]"
+                                },
+                                "justlib:movement/motion/y_1": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[7]"
+                                },
+                                "justlib:movement/motion/y": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[8]"
+                                },
+                                "justlib:movement/motion/-y_2": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[9]"
+                                },
+                                "justlib:movement/motion/-y_1": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[10]"
+                                },
+                                "justlib:movement/motion/-y": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[11]"
+                                },
+                                "justlib:movement/motion/z_2": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[12]"
+                                },
+                                "justlib:movement/motion/z_1": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[13]"
+                                },
+                                "justlib:movement/motion/z": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[14]"
+                                },
+                                "justlib:movement/motion/-z_2": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[15]"
+                                },
+                                "justlib:movement/motion/-z_1": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[16]"
+                                },
+                                "justlib:movement/motion/-z": {
+                                    "type": "minecraft:storage",
+                                    "storage": "justlib:main",
+                                    "path": "movement.motion[17]"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
