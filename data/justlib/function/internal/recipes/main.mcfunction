@@ -1,6 +1,3 @@
-# Destroy
-execute unless entity @s[tag=justlib.recipes.active] run return fail
-
 # On close
 execute if block ~ ~ ~ minecraft:barrel[open=false] run return run function justlib:internal/recipes/handler/close
 
