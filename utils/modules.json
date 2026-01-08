@@ -1,0 +1,162 @@
+{
+    "main": {
+        "depends": [],
+        "paths": [
+            "minecraft/tags/function",
+            "justlib/advancement/load_player.json",
+            "justlib/function/load.mcfunction",
+            "justlib/function/load_player.mcfunction",
+            "justlib/function/tick.mcfunction"
+        ],
+        "entrypoints": {}
+    },
+    "shared": {
+        "depends": [
+            "main"
+        ],
+        "paths": [
+            "minecraft/loot_table/blocks/shulker_box.json",
+            "justlib/dimension/main.json",
+            "justlib/function/api/shared",
+            "justlib/function/internal/shared",
+            "justlib/item_modifier/shared",
+            "justlib/predicate/shared",
+            "justlib/tags/block/shared",
+            "justlib/tags/function/shared"
+        ],
+        "entrypoints": {
+            "tick": [
+                "justlib/function/internal/shared/tick.mcfunction"
+            ],
+            "load": [
+                "justlib/function/internal/shared/load.mcfunction"
+            ],
+            "tick_player": [
+                "justlib/function/internal/shared/resurrection/tick_player.mcfunction"
+            ],
+            "load_player": [
+                "justlib/function/internal/shared/id/load_player.mcfunction"
+            ]
+        }
+    },
+    "block": {
+        "depends": [
+            "shared"
+        ],
+        "paths": [
+            "justlib/function/api/block",
+            "justlib/function/internal/block",
+            "justlib/tags/block/block",
+            "justlib/tags/entity_type/block"
+        ],
+        "entrypoints": {
+            "tick": [
+                "justlib/function/internal/block/tick.mcfunction"
+            ],
+            "load": [],
+            "tick_player": [],
+            "load_player": []
+        }
+    },
+    "effect": {
+        "depends": [
+            "shared"
+        ],
+        "paths": [
+            "justlib/advancement/effect",
+            "justlib/function/api/effect",
+            "justlib/function/internal/effect"
+        ],
+        "entrypoints": {
+            "tick": [
+                "justlib/function/internal/effect/tick.mcfunction"
+            ],
+            "load": [
+                "justlib/function/internal/effect/load.mcfunction"
+            ],
+            "tick_player": [],
+            "load_player": []
+        }
+    },
+    "health": {
+        "depends": [
+            "shared"
+        ],
+        "paths": [
+            "justlib/advancement/health",
+            "justlib/function/api/health",
+            "justlib/function/internal/health"
+        ],
+        "entrypoints": {
+            "tick": [],
+            "load": [
+                "justlib/function/internal/health/load.mcfunction"
+            ],
+            "tick_player": [],
+            "load_player": []
+        }
+    },
+    "math": {
+        "depends": [
+            "shared"
+        ],
+        "paths": [
+            "justlib/function/api/math",
+            "justlib/function/internal/math"
+        ],
+        "entrypoints": {
+            "tick": [],
+            "load": [
+                "justlib/function/internal/math/load.mcfunction"
+            ],
+            "tick_player": [],
+            "load_player": []
+        }
+    },
+    "movement": {
+        "depends": [
+            "shared",
+            "math"
+        ],
+        "paths": [
+            "justlib/enchantment/movement",
+            "justlib/function/api/movement",
+            "justlib/function/internal/movement",
+            "justlib/loot_table/internal/movement",
+            "justlib/predicate/movement"
+        ],
+        "entrypoints": {
+            "tick": [],
+            "load": [
+                "justlib/function/internal/movement/load.mcfunction"
+            ],
+            "tick_player": [],
+            "load_player": []
+        }
+    },
+    "recipes": {
+        "depends": [
+            "shared",
+            "block"
+        ],
+        "paths": [
+            "justlib/advancement/recipes",
+            "justlib/function/api/recipes",
+            "justlib/function/internal/recipes",
+            "justlib/loot_table/blocks/crafting_table.json"
+        ],
+        "entrypoints": {
+            "tick": [
+                "justlib/function/internal/recipes/tick.mcfunction"
+            ],
+            "load": [
+                "justlib/function/internal/recipes/load.mcfunction"
+            ],
+            "tick_player": [],
+            "load_player": [],
+            "recipes/register": [
+                "justlib/function/internal/recipes/register_test.mcfunction"
+            ]
+        }
+    }
+}
