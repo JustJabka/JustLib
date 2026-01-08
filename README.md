@@ -4,7 +4,7 @@
 
 # About
 
-This library has a modular structure that separates the API and internal components. This makes it easy to maintain the library and import only the necessary modules into projects, which allows to reduce the file size and decreases the load on the server.
+This library has a modular structure that separates the API and internal components. This makes it easy to maintain the library and [import only the necessary modules](https://github.com/JustJabka/JustLib/wiki/About%E2%9D%93#using-cli-recommended) into projects, which allows to reduce the file size and decreases the load on the server.
 
 You can check out the [wiki](https://github.com/JustJabka/JustLib/wiki/About%E2%9D%93) if you want to learn more about this library🎓
 
