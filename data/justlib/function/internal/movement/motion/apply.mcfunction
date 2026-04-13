@@ -5,7 +5,7 @@ function justlib:api/shared/gamemode/get
 scoreboard players operation $in main = $out main
 
 # Prepearing for applying motion
-rotate @s 0 0
+execute unless score #rotated justlib.movement matches 1 run rotate @s 0 0
 gamemode spectator
 
 function justlib:internal/movement/motion/axis
@@ -15,7 +15,7 @@ execute in justlib:main run item replace block 0 0 0 container.0 from entity @s 
 loot replace entity @s saddle loot justlib:internal/movement/motion
 
 # Reverting changes
-rotate @s ~ ~
+execute unless score #rotated justlib.movement matches 1 run rotate @s ~ ~
 function justlib:api/shared/gamemode/set
 
 # Stopping motion
