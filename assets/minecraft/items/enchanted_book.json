@@ -1,0 +1,30 @@
+{
+    "model": {
+        "type": "minecraft:select",
+        "cases": [
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/diamond",
+                    "tints": [
+                        {
+                            "type": "minecraft:constant",
+                            "value": 15790080
+                        }
+                    ]
+                },
+                "when": [
+                    {
+                        "justlib:movement/motion/-x": 101
+                    }
+                ]
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/enchanted_book"
+        },
+        "property": "minecraft:component",
+        "component": "minecraft:stored_enchantments"
+    }
+}

@@ -1,6 +1,7 @@
 {
 	"textures": {
-		"0": "justlib:item/gui/crafting_table"
+		"0": "justlib:item/gui/crafting_table",
+        "particle": "justlib:item/gui/crafting_table"
 	},
     "elements": [
         {
