@@ -1,8 +1,8 @@
 # Try place block
-execute if entity @s[type=minecraft:glow_item_frame] run return run function justlib:internal/block/custom/try_place
+execute if entity @s[type=minecraft:glow_item_frame] run return run function justlib:internal/block/custom/try/place
 
 # Destroy block
-execute unless block ~ ~ ~ #justlib:block/custom run return run function justlib:api/block/custom/destroy
+execute unless block ~ ~ ~ #justlib:block/custom run return run function justlib:internal/block/custom/destroy
 
 # Cancel update of block (only for marker)
 execute if entity @s[type=minecraft:marker] if block ~ ~ ~ minecraft:campfire[lit=true] run return run function justlib:internal/block/custom/cancel_update
