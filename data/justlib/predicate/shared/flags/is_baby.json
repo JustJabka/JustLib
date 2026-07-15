@@ -2,10 +2,8 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-        "type_specific/player": {
-            "input": {
-                "right": true
-            }
+        "flags": {
+            "is_baby": true
         }
     }
 }

@@ -1,5 +1,5 @@
 # Limit max health
-function justlib:internal/health/heal/set with storage justlib:main macros.health
+function justlib:internal/health/heal/set with storage justlib:main health
 
 # PREPARE THYSELF to subtick
 effect give @s minecraft:instant_health 1 252 true

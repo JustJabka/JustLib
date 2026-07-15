@@ -1,5 +1,6 @@
 {
     "values": [
-        "justlib:internal/shared/resurrection/tick_player"
+        "justlib:internal/shared/resurrection/tick_player",
+        "justlib:internal/effect/custom/tick_player"
     ]
 }

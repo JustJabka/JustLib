@@ -1,5 +1,6 @@
 {
     "values": [
-        "justlib:internal/shared/id/load_player"
+        "justlib:internal/shared/id/load_player",
+        "justlib:internal/shared/ps/load_player"
     ]
 }

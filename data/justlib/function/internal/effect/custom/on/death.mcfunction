@@ -1,0 +1,1 @@
+function justlib:api/effect/custom/clear_all

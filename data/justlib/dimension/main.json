@@ -1,11 +1,13 @@
 {
-    "type": "minecraft:the_end",
+    "type": "justlib:main",
     "generator": {
         "type": "minecraft:flat",
         "settings": {
             "layers": [],
             "biome": "minecraft:the_void",
-            "structure_overrides": []
+            "structure_overrides": [],
+            "features": false,
+            "lakes": false
         }
     }
 }

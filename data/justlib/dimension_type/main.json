@@ -1,0 +1,17 @@
+{
+	"has_ender_dragon_fight": false,
+	"ambient_light": 0.25,
+	"coordinate_scale": 1,
+	"default_clock": "minecraft:overworld",
+	"has_ceiling": false,
+	"has_skylight": false,
+	"has_fixed_time": true,
+	"height": 256,
+	"infiniburn": [],
+	"logical_height": 256,
+	"min_y": 0,
+	"monster_spawn_block_light_limit": 0,
+	"monster_spawn_light_level": 15,
+	"skybox": "none",
+	"timelines": "#minecraft:universal"
+}

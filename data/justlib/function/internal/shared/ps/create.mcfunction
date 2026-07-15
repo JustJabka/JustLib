@@ -1,0 +1,1 @@
+$data modify storage justlib:main players_data.$(id) set value {}

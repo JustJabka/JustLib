@@ -2,4 +2,4 @@ execute store result score #temp main run data get storage justlib:main temp[-1]
 scoreboard players operation #min main < #temp main
 
 data remove storage justlib:main temp[-1]
-execute if data storage justlib:main temp[-1] run function justlib:internal/recipes/craft/loop/calc
+execute if data storage justlib:main temp[0] run function justlib:internal/recipes/craft/loop/calc
