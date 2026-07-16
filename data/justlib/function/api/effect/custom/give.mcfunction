@@ -1,8 +1,8 @@
-# Input: storage justlib:main effects.give
+# Input: storage justlib:main effect.give
 # Output: void
 
 # Prevent effects without duration
-execute store result score #duration main run data get storage justlib:main effects.give.duration
+execute store result score #duration main run data get storage justlib:main effect.give.duration
 execute if score #duration main matches ..0 run return fail
 
 function justlib:api/shared/ps/get
