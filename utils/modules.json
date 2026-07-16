@@ -52,16 +52,11 @@
             "justlib/tags/entity_type/block"
         ],
         "entrypoints": {
-            "shared/resurrection/on_death": [
-                "justlib/function/internal/effect/custom/on/death.mcfunction"
-            ],
             "tick": [
                 "justlib/function/internal/block/tick.mcfunction"
             ],
             "load": [],
-            "tick_player": [
-                "justlib/function/internal/effect/custom/tick_player.mcfunction"
-            ],
+            "tick_player": [],
             "load_player": []
         }
     },
@@ -75,13 +70,18 @@
             "justlib/function/internal/effect"
         ],
         "entrypoints": {
+            "shared/resurrection/on_death": [
+                "justlib/function/internal/effect/custom/on/death.mcfunction"
+            ],
             "tick": [
                 "justlib/function/internal/effect/tick.mcfunction"
             ],
             "load": [
                 "justlib/function/internal/effect/load.mcfunction"
             ],
-            "tick_player": [],
+            "tick_player": [
+                "justlib/function/internal/effect/custom/tick_player.mcfunction"
+            ],
             "load_player": []
         }
     },
