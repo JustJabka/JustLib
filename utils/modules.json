@@ -23,7 +23,8 @@
             "justlib/item_modifier/shared",
             "justlib/predicate/shared",
             "justlib/tags/block/shared",
-            "justlib/tags/function/shared"
+            "justlib/tags/function/shared",
+            "justlib/slot_source/shared"
         ],
         "entrypoints": {
             "tick": [
