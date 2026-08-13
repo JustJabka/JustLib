@@ -1,0 +1,1 @@
+gamerule minecraft:max_command_sequence_length 2147483647

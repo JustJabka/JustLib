@@ -166,5 +166,19 @@
                 "justlib/function/internal/recipes/register_test.mcfunction"
             ]
         }
+    },
+    "sort": {
+        "depends": [
+            "shared"
+        ],
+        "paths": [
+            "justlib/function/api/sort",
+            "justlib/function/internal/sort"
+        ],
+        "entrypoints": {
+            "load": [
+                "justlib/function/internal/sort/load.mcfunction"
+            ]
+        }
     }
 }

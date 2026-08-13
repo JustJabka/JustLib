@@ -5,6 +5,7 @@
         "justlib:internal/effect/load",
         "justlib:internal/math/load",
         "justlib:internal/movement/load",
-        "justlib:internal/recipes/load"
+        "justlib:internal/recipes/load",
+        "justlib:internal/sort/load"
     ]
 }
