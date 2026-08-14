@@ -10,33 +10,29 @@
                         {
                             "type": "minecraft:dynamic",
                             "name": "minecraft:contents",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:match_tool",
-                                    "predicate": {
-                                        "predicates": {
-                                            "minecraft:custom_data": {
-                                                "drop": true
-                                            }
+                            "condition": {
+                                "type": "minecraft:match_tool",
+                                "predicate": {
+                                    "predicates": {
+                                        "minecraft:custom_data": {
+                                            "drop": true
                                         }
                                     }
                                 }
-                            ]
+                            }
                         },
                         {
                             "type": "minecraft:item",
-                            "functions": [
-                                {
-                                    "function": "minecraft:copy_components",
-                                    "include": [
-                                        "minecraft:custom_name",
-                                        "minecraft:container",
-                                        "minecraft:lock",
-                                        "minecraft:container_loot"
-                                    ],
-                                    "source": "block_entity"
-                                }
-                            ],
+                            "modifier": {
+                                "type": "minecraft:copy_components",
+                                "include": [
+                                    "minecraft:custom_name",
+                                    "minecraft:container",
+                                    "minecraft:lock",
+                                    "minecraft:container_loot"
+                                ],
+                                "source": "block_entity"
+                            },
                             "name": "minecraft:shulker_box"
                         }
                     ]

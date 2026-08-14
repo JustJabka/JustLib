@@ -1,8 +1,8 @@
 {
-    "function": "minecraft:modify_contents",
+    "type": "minecraft:modify_contents",
     "component": "minecraft:bundle_contents",
     "modifier": {
-        "function": "minecraft:filtered",
+        "type": "minecraft:filtered",
         "item_filter": {
             "predicates": {
                 "minecraft:custom_data": {
@@ -11,7 +11,7 @@
             }
         },
         "on_pass": {
-            "function": "minecraft:set_count",
+            "type": "minecraft:set_count",
             "count": 0,
             "add": false
         }
