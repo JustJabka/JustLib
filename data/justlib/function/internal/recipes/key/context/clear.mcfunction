@@ -1,1 +1,0 @@
-data remove storage justlib:main stack

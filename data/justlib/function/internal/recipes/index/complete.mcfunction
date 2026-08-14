@@ -1,1 +1,0 @@
-$data modify storage justlib:recipes recipe[-1].index set from storage justlib:recipes registered.$(id)

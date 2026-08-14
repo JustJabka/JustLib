@@ -1,1 +1,0 @@
-$data modify storage justlib:recipes craft set from storage justlib:recipes shapeless."$(key)"
