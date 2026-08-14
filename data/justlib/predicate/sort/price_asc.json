@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:value_check",
+    "value": {
+        "type": "minecraft:storage",
+        "storage": "justlib:sort",
+        "path": "this.temp[-1].date"
+    },
+    "range": {
+        "max": {
+            "type": "minecraft:storage",
+            "storage": "justlib:sort",
+            "path": "this.mid.date"
+        }
+    }
+}
