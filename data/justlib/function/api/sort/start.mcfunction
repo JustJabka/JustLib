@@ -10,9 +10,11 @@ execute unless data storage justlib:sort in.target run return fail
 execute unless data storage justlib:sort in.data[] run return fail
 
 # Fallback
-# TODO: Remove mutations!
-execute unless data storage justlib:sort in.scale run data modify storage justlib:sort in.scale set value 1
-execute unless data storage justlib:sort in.mode run data modify storage justlib:sort in.mode set value "desc"
+data modify storage justlib:sort args set value {scale:1,mode:"desc"}
+
+data modify storage justlib:sort args.target set from storage justlib:sort in.target
+execute if data storage justlib:sort in.scale run data modify storage justlib:sort args.scale set from storage justlib:sort in.scale
+execute if data storage justlib:sort in.mode run data modify storage justlib:sort args.mode set from storage justlib:sort in.mode
 
 # Start
 data remove storage justlib:sort out

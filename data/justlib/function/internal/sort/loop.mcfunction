@@ -10,7 +10,7 @@ data modify storage justlib:sort this.temp set from storage justlib:sort temp
 data modify storage justlib:sort this.mid set from storage justlib:sort this.temp[-1]
 data remove storage justlib:sort this.temp[-1]
 data modify storage justlib:sort element set from storage justlib:sort this.mid
-execute store result score #mid main run function justlib:internal/sort/get with storage justlib:sort in
+execute store result score #mid main run function justlib:internal/sort/get with storage justlib:sort args
 
 data modify storage justlib:sort this merge value {left:[],right:[],out:[]}
 function justlib:internal/sort/step
