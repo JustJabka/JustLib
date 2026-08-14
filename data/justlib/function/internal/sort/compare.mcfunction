@@ -1,1 +1,1 @@
-$function justlib:internal/sort/order/$(mode)
+$function justlib:internal/sort/mode/$(mode)
