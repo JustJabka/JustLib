@@ -1,1 +1,0 @@
-$function justlib:internal/sort/mode/$(mode)
