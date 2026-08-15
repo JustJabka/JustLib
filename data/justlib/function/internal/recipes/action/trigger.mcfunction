@@ -14,4 +14,4 @@ execute unless data storage justlib:recipes in[0] run return fail
 data modify storage justlib:recipes clicked set from storage justlib:recipes in[0].components."minecraft:custom_data"
 execute unless data storage justlib:recipes clicked.dynamic run return fail
 
-function justlib:internal/recipes/action/button/click
+function justlib:internal/recipes/action/click
