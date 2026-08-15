@@ -1,4 +1,5 @@
 # Put recipes in to the page
+data remove storage justlib:recipes recipe
 $data modify storage justlib:recipes recipe set from storage justlib:recipes recipes[$(recipe_index)]
 
 execute unless data storage justlib:recipes recipe run return fail
