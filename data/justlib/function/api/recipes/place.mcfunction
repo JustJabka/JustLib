@@ -1,4 +1,8 @@
-setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:{translate:"block.justlib.crafting_table"},components:{"minecraft:custom_data":{"justlib.recipes":true}}}
+setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:[\
+    "",\
+    {"text":"󏿸󏿮","font":"justlib:gui","color":"white"},\
+    {translate:"block.justlib.crafting_table"},\
+],components:{"minecraft:custom_data":{"justlib.recipes":true}}}
 execute align xyz run summon minecraft:item_display ~0.5 ~0.5 ~0.5 {\
     Tags:["justlib.block","justlib.recipes"],\
     data:{"justlib.block.loot_table":"justlib:blocks/crafting_table"},\

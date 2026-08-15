@@ -1,25 +1,70 @@
 {
     "criteria": {
-        "requirement": {
+        "open": {
             "trigger": "minecraft:default_block_use",
             "conditions": {
                 "location": {
-                        "type": "minecraft:location_check",
-                        "predicate": {
-                            "block": {
-                                "blocks": "minecraft:barrel",
-                                "predicates": {
-                                    "minecraft:custom_data": {
-                                        "justlib.recipes": true
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "type": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "minecraft:barrel",
+                                    "predicates": {
+                                        "minecraft:custom_data": {
+                                            "justlib.recipes": true
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:inverted",
+                            "term": {
+                                "type": "minecraft:location_check",
+                                "predicate": {
+                                    "block": {
+                                        "nbt": {
+                                            "lock": {}
+                                        }
                                     }
                                 }
                             }
                         }
+                    ]
+                }
+            }
+        },
+        "closed": {
+            "trigger": "minecraft:default_block_use",
+            "conditions": {
+                "location": {
+                    "type": "minecraft:location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": "minecraft:barrel",
+                            "predicates": {
+                                "minecraft:custom_data": {
+                                    "justlib.recipes": true
+                                }
+                            },
+                            "nbt": {
+                                "lock": {}
+                            }
+                        }
                     }
+                }
             }
         }
     },
+    "requirements": [
+        [
+            "open",
+            "closed"
+        ]
+    ],
     "rewards": {
-        "function": "justlib:internal/recipes/entry"
+        "function": "justlib:internal/recipes/entry/trigger"
     }
 }

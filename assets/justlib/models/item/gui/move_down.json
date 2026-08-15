@@ -1,0 +1,11 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "justlib:item/gui/move_down"
+    },
+    "display": {
+        "ground": {
+            "scale": [0, 0, 0]
+        }
+    }
+}

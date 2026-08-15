@@ -3,9 +3,9 @@ data modify storage justlib:recipes placeholder set value {id:"minecraft:poisono
 
 # All slots that are not used in crafting table (placeholder, null items, gui parts like understood?)
 data modify storage justlib:recipes template set value [\
-    {Slot:0b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/scroll/up"}}},\
-    {Slot:9b},\
-    {Slot:18b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/scroll/down"}}},\
+    {Slot:0b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/scroll/up"},"minecraft:item_model":"justlib:gui/move_up"}},\
+    {Slot:9b,components:{"!minecraft:item_model":{}}},\
+    {Slot:18b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/scroll/down"},"minecraft:item_model":"justlib:gui/move_down"}},\
 ]
 
 # Placeholder Components
