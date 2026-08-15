@@ -21,7 +21,7 @@ data modify storage justlib:recipes template[].components merge from storage jus
 
 # Recipes Components
 data modify storage justlib:recipes recipes_properties set value {\
-    "minecraft:custom_data":{"justlib.clear":true},\
+    "minecraft:custom_data":{"justlib.clear":true,"dynamic":"function justlib:internal/recipes/action/craft"},\
 }
 
 # Page Slots
