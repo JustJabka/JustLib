@@ -18,6 +18,7 @@ function justlib:internal/recipes/action/trigger
 
 ## Reset items
 data modify block ~ ~ ~ Items set from storage justlib:recipes template
+function justlib:internal/recipes/page/draw with entity @s data
 
 ## Save changes
 data modify entity @s data.compare set from block ~ ~ ~ Items
