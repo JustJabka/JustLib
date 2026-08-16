@@ -1,10 +1,14 @@
-# Remove all gui data
 data modify storage justlib:recipes result set from storage justlib:recipes clicked
 
+# Remove gui data
 data remove storage justlib:recipes result.components."minecraft:custom_data"."justlib.clear"
-data remove storage justlib:recipes result.components."minecraft:custom_data".ingredients
 data remove storage justlib:recipes result.components."minecraft:custom_data".dynamic
-data remove storage justlib:recipes result.components."minecraft:custom_data"."prev"
+data remove storage justlib:recipes result.components."minecraft:custom_data".prev
+
+# Remove recipe data
+data remove storage justlib:recipes result.components."minecraft:custom_data".ingredients
+data remove storage justlib:recipes result.components."minecraft:lore"[{translate:"item.ingredients"}]
+data remove storage justlib:recipes result.components."minecraft:lore"[{translate:"item.ingredient"}]
 
 # Give item to the player
 data modify block ~ ~ ~ Items set value []

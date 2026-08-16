@@ -12,3 +12,4 @@ data modify storage justlib:recipes pages set value []
 scoreboard players set #page main 0
 
 function justlib:internal/recipes/page/loop/create
+data modify storage justlib:recipes pages[][].components merge from storage justlib:recipes recipes_properties
