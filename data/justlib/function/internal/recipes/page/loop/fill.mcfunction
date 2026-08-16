@@ -4,12 +4,6 @@ $data modify storage justlib:recipes recipe set from storage justlib:recipes rec
 
 execute unless data storage justlib:recipes recipe run return fail
 
-# Modify recipe on the page
-data remove storage justlib:recipes temp
-data modify storage justlib:recipes temp set from storage justlib:recipes recipe.components."minecraft:custom_data".ingredients
-
-execute if data storage justlib:recipes temp[0] run function justlib:internal/recipes/page/loop/modify/start
-
 # Put recipe in to the page
 $data modify storage justlib:recipes pages[-1][$(index)] merge from storage justlib:recipes recipe
 

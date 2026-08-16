@@ -1,2 +1,0 @@
-data modify storage justlib:recipes recipe.components."minecraft:lore" prepend value {translate:"item.ingredients",fallback:"Ingredients",color:"blue",italic:false}
-function justlib:internal/recipes/page/loop/modify

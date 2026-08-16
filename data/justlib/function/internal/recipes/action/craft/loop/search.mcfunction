@@ -1,5 +1,5 @@
 # Get Ingredient Amount
-$execute store result score #amount main run clear @a[predicate=justlib:shared/id,limit=1] $(id) 0
+$execute store result score #amount main run clear @a[predicate=justlib:shared/id,limit=1] $(item) 0
 
 # If player has not enough ingredient - cancel
 $execute unless score #amount main matches $(count).. run return run scoreboard players set #temp main 0

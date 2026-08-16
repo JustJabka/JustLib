@@ -7,8 +7,6 @@ data remove storage justlib:recipes result.components."minecraft:custom_data".pr
 
 # Remove recipe data
 data remove storage justlib:recipes result.components."minecraft:custom_data".ingredients
-data remove storage justlib:recipes result.components."minecraft:lore"[{translate:"item.ingredients"}]
-data remove storage justlib:recipes result.components."minecraft:lore"[{translate:"item.ingredient"}]
 
 # Give item to the player
 data modify block ~ ~ ~ Items set value []
