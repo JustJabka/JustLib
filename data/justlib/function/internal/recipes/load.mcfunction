@@ -11,4 +11,4 @@ scoreboard players operation #page_slots main *= #row_slots main
 # TODO: Optimize ts
 function justlib:internal/recipes/load/templates
 function justlib:internal/recipes/load/recipes
-function justlib:internal/recipes/load/pages
+execute if score #changed main matches 1 run function justlib:internal/recipes/load/pages
