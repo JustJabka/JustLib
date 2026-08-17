@@ -1,9 +1,9 @@
 # TODO: Don't forget to remove this after development is finished
-data modify storage justlib:recipes recipes append value {id:"minecraft:enchanted_golden_apple",count:1,components:{"minecraft:custom_data":{ingredients:[\
+data modify storage justlib:recipes recipes append value {result:{id:"minecraft:enchanted_golden_apple",count:1,components:{"minecraft:item_name":"Notch Apple"}},ingredients:[\
     {item:"minecraft:gold_block",count:8},\
     {item:"minecraft:apple",count:1},\
-]}}}
+]}
 
-data modify storage justlib:recipes recipes append value {id:"minecraft:emerald",count:1,components:{"minecraft:custom_data":{ingredients:[\
-    {item:"minecraft:diamond[minecraft:custom_data~{test:true}]",count:64},\
-]}}}
+data modify storage justlib:recipes recipes append value {result:{id:"minecraft:diamond",count:1,components:{"minecraft:enchantment_glint_override":true}},ingredients:[\
+    {item:"minecraft:diamond",count:64},\
+]}

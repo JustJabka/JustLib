@@ -11,7 +11,7 @@ data modify storage justlib:recipes in append from storage justlib:recipes temp[
 
 # Get click context
 execute unless data storage justlib:recipes in[0] run return fail
-data modify storage justlib:recipes clicked set from storage justlib:recipes in[0]
-execute unless data storage justlib:recipes clicked.components."minecraft:custom_data".dynamic run return fail
+data modify storage justlib:recipes clicked set from storage justlib:recipes in[0].components."minecraft:custom_data"
+execute unless data storage justlib:recipes clicked.dynamic run return fail
 
 function justlib:internal/recipes/action/click
