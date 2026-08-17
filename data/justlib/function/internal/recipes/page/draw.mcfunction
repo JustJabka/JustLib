@@ -1,1 +1,1 @@
-$data modify block ~ ~ ~ Items append from storage justlib:recipes pages[$(page)][]
+$data modify block ~ ~ ~ Items set from storage justlib:recipes pages[$(page)]
