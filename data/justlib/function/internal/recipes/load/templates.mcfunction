@@ -24,9 +24,5 @@ data modify storage justlib:recipes recipes_properties set value {\
     "minecraft:custom_data":{"justlib.clear":true,"dynamic":"function justlib:internal/recipes/action/craft"},\
 }
 
-# Page Slots
-data modify storage justlib:recipes page_template set value [\
-    {Slot:1b},{Slot:2b},{Slot:3b},{Slot:4b},{Slot:5b},{Slot:6b},{Slot:7b},{Slot:8b},\
-    {Slot:10b},{Slot:11b},{Slot:12b},{Slot:13b},{Slot:14b},{Slot:15b},{Slot:16b},{Slot:17b},\
-    {Slot:19b},{Slot:20b},{Slot:21b},{Slot:22b},{Slot:23b},{Slot:24b},{Slot:25b},{Slot:26b},\
-]
+# Slots where recipes will be placed
+data modify storage justlib:recipes recipes_slots set value [1b,2b,3b,4b,5b,6b,7b,8b,10b,11b,12b,13b,14b,15b,16b,17b,19b,20b,21b,22b,23b,24b,25b,26b]
