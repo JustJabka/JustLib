@@ -4,7 +4,6 @@ data modify block ~ ~ ~ lock set value {predicates:{"minecraft:custom_data":{"ju
 
 data modify entity @s data.page set value 0
 
-data modify block ~ ~ ~ Items set from storage justlib:recipes template
 function justlib:internal/recipes/page/draw with entity @s data
 
 data modify entity @s data.compare set from block ~ ~ ~ Items

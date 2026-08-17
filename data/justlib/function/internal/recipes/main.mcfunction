@@ -17,7 +17,6 @@ execute in justlib:main positioned 0 0 0 run function justlib:internal/recipes/i
 function justlib:internal/recipes/action/trigger
 
 ## Reset items
-data modify block ~ ~ ~ Items set from storage justlib:recipes template
 function justlib:internal/recipes/page/draw with entity @s data
 
 ## Save changes
