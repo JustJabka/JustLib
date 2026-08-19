@@ -10,5 +10,5 @@ data modify storage justlib:recipes template_properties set value {\
 
 # Recipes Components
 data modify storage justlib:recipes recipes_properties set value {\
-    "minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/craft"},\
+    "minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/craft/start"},\
 }
