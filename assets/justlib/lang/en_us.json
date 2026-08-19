@@ -1,3 +1,5 @@
 {
-    "block.justlib.crafting_table": "Advanced Crafting Table"
+    "block.justlib.crafting_table": "Advanced Crafting Table",
+    "item.ingredients": "Ingredients",
+    "item.ingredient": "%s x%s"
 }

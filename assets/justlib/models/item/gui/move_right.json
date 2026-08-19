@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-        "layer0": "justlib:item/gui/move_down"
+        "layer0": "justlib:item/gui/move_right"
     }
 }

@@ -1,0 +1,30 @@
+{
+    "oversized_in_gui": true,
+    "hand_animation_on_swap": false,
+    "model": {
+        "type": "minecraft:select",
+        "property": "minecraft:display_context",
+        "cases": [
+            {
+                "model": {
+                    "type": "minecraft:condition",
+                    "property": "minecraft:carried",
+                    "on_true": {
+                        "type": "minecraft:model",
+                        "model": "justlib:item/gui/settings"
+                    },
+                    "on_false": {
+                        "type": "minecraft:model",
+                        "model": "justlib:item/gui/settings"
+                    }
+                },
+                "when": [
+                    "gui"
+                ]
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:empty"
+        }
+    }
+}

@@ -1,18 +1,75 @@
-# Get recipes amount
-execute store result score #recipes main if data storage justlib:recipes recipes[]
+data remove storage justlib:recipes static
 
-# pages = (23 + recipes) / 24
-scoreboard players operation #pages main = #page_slots main
-scoreboard players remove #pages main 1
-scoreboard players operation #pages main += #recipes main
+data modify storage justlib:recipes in set from storage justlib:recipes recipes
 
-scoreboard players operation #pages main /= #page_slots main
+# Left
+data modify storage justlib:recipes meta set value {template:[\
+    {Slot:0b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/step_page","offset":-1},"minecraft:item_model":"justlib:gui/move_up"}},\
+    {Slot:9b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/change/mode"},"minecraft:item_model":"justlib:gui/settings"}},\
+    {Slot:18b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/step_page","offset":1},"minecraft:item_model":"justlib:gui/move_down"}},\
+], slots:[1b,2b,3b,4b,5b,6b,7b,8b,10b,11b,12b,13b,14b,15b,16b,17b,19b,20b,21b,22b,23b,24b,25b,26b]}
+function justlib:internal/recipes/page/compile/start
 
-# Generate Pages
-data modify storage justlib:recipes pages set value []
-scoreboard players set #page main 0
+data modify storage justlib:recipes static append from storage justlib:recipes pages
 
-function justlib:internal/recipes/page/loop/create
+# Right
+data modify storage justlib:recipes meta set value {template:[\
+    {Slot:8b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/step_page","offset":-1},"minecraft:item_model":"justlib:gui/move_up"}},\
+    {Slot:17b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/change/mode"},"minecraft:item_model":"justlib:gui/settings"}},\
+    {Slot:26b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/step_page","offset":1},"minecraft:item_model":"justlib:gui/move_down"}},\
+], slots:[0b,1b,2b,3b,4b,5b,6b,7b,9b,10b,11b,12b,13b,14b,15b,16b,18b,19b,20b,21b,22b,23b,24b,25b]}
+function justlib:internal/recipes/page/compile/start
 
-data modify storage justlib:recipes pages[][].components merge from storage justlib:recipes recipes_properties
-data modify storage justlib:recipes pages[] append from storage justlib:recipes template[]
+data modify storage justlib:recipes static append from storage justlib:recipes pages
+
+# Dock
+data modify storage justlib:recipes meta set value {template:[\
+    {Slot:21b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/step_page","offset":-1},"minecraft:item_model":"justlib:gui/move_left"}},\
+    {Slot:22b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/change/mode"},"minecraft:item_model":"justlib:gui/settings"}},\
+    {Slot:23b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/step_page","offset":1},"minecraft:item_model":"justlib:gui/move_right"}},\
+], slots:[0b,1b,2b,3b,4b,5b,6b,7b,8b,9b,10b,11b,12b,13b,14b,15b,16b,17b,18b,19b,20b,24b,25b,26b]}
+function justlib:internal/recipes/page/compile/start
+
+data modify storage justlib:recipes static append from storage justlib:recipes pages
+
+# Island
+data modify storage justlib:recipes meta set value {template:[\
+    {Slot:3b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/step_page","offset":-1},"minecraft:item_model":"justlib:gui/move_left"}},\
+    {Slot:4b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/change/mode"},"minecraft:item_model":"justlib:gui/settings"}},\
+    {Slot:5b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/step_page","offset":1},"minecraft:item_model":"justlib:gui/move_right"}},\
+], slots:[0b,1b,2b,6b,7b,8b,9b,10b,11b,12b,13b,14b,15b,16b,17b,18b,19b,20b,21b,22b,23b,24b,25b,26b]}
+function justlib:internal/recipes/page/compile/start
+
+data modify storage justlib:recipes static append from storage justlib:recipes pages
+
+# Bottom
+data modify storage justlib:recipes meta set value {template:[\
+    {Slot:18b,components:{"!minecraft:item_model":{}}},\
+    {Slot:19b,components:{"!minecraft:item_model":{}}},\
+    {Slot:20b,components:{"!minecraft:item_model":{}}},\
+    {Slot:21b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/step_page","offset":-1},"minecraft:item_model":"justlib:gui/move_left"}},\
+    {Slot:22b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/change/mode"},"minecraft:item_model":"justlib:gui/settings"}},\
+    {Slot:23b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/step_page","offset":1},"minecraft:item_model":"justlib:gui/move_right"}},\
+    {Slot:24b,components:{"!minecraft:item_model":{}}},\
+    {Slot:25b,components:{"!minecraft:item_model":{}}},\
+    {Slot:26b,components:{"!minecraft:item_model":{}}},\
+], slots:[0b,1b,2b,3b,4b,5b,6b,7b,8b,9b,10b,11b,12b,13b,14b,15b,16b,17b]}
+function justlib:internal/recipes/page/compile/start
+
+data modify storage justlib:recipes static append from storage justlib:recipes pages
+
+# Top
+data modify storage justlib:recipes meta set value {template:[\
+    {Slot:0b,components:{"!minecraft:item_model":{}}},\
+    {Slot:1b,components:{"!minecraft:item_model":{}}},\
+    {Slot:2b,components:{"!minecraft:item_model":{}}},\
+    {Slot:3b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/step_page","offset":-1},"minecraft:item_model":"justlib:gui/move_left"}},\
+    {Slot:4b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/change/mode"},"minecraft:item_model":"justlib:gui/settings"}},\
+    {Slot:5b,components:{"minecraft:custom_data":{"dynamic":"function justlib:internal/recipes/action/step_page","offset":1},"minecraft:item_model":"justlib:gui/move_right"}},\
+    {Slot:6b,components:{"!minecraft:item_model":{}}},\
+    {Slot:7b,components:{"!minecraft:item_model":{}}},\
+    {Slot:8b,components:{"!minecraft:item_model":{}}},\
+], slots:[9b,10b,11b,12b,13b,14b,15b,16b,17b,18b,19b,20b,21b,22b,23b,24b,25b,26b]}
+function justlib:internal/recipes/page/compile/start
+
+data modify storage justlib:recipes static append from storage justlib:recipes pages

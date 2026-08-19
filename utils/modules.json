@@ -162,9 +162,7 @@
             ],
             "tick_player": [],
             "load_player": [],
-            "recipes/register": [
-                "justlib/function/internal/recipes/register_test.mcfunction"
-            ]
+            "recipes/register": []
         }
     },
     "sort": {

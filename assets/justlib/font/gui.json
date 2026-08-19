@@ -4,16 +4,61 @@
 				"type": "space",
 				"advances": {
 					"󏿸": -8,
-					"󏿮": -18
+					"󏼇":-249
 				}
 			},
 			{
 				"type": "bitmap",
-				"file": "justlib:item/gui/crafting_table.png",
+				"file": "justlib:font/gui/crafting_table/left.png",
 				"ascent": 13,
 				"height": 256,
 				"chars": [
-					""
+					"0"
+				]
+			},
+			{
+				"type": "bitmap",
+				"file": "justlib:font/gui/crafting_table/right.png",
+				"ascent": 13,
+				"height": 256,
+				"chars": [
+					"1"
+				]
+			},
+			{
+				"type": "bitmap",
+				"file": "justlib:font/gui/crafting_table/dock.png",
+				"ascent": 13,
+				"height": 256,
+				"chars": [
+					"2"
+				]
+			},
+			{
+				"type": "bitmap",
+				"file": "justlib:font/gui/crafting_table/island.png",
+				"ascent": 13,
+				"height": 256,
+				"chars": [
+					"3"
+				]
+			},
+			{
+				"type": "bitmap",
+				"file": "justlib:font/gui/crafting_table/bottom.png",
+				"ascent": 13,
+				"height": 256,
+				"chars": [
+					"4"
+				]
+			},
+			{
+				"type": "bitmap",
+				"file": "justlib:font/gui/crafting_table/top.png",
+				"ascent": 13,
+				"height": 256,
+				"chars": [
+					"5"
 				]
 			}
 		]
