@@ -6,9 +6,8 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:glow_item_frame",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_components",
+                    "modifier": {
+                            "type": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_model": "justlib:crafting_table",
                                 "minecraft:item_name": {
@@ -31,7 +30,6 @@
                                 }
                             }
                         }
-                    ]
                 }
             ]
         }

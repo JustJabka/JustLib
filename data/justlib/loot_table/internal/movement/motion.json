@@ -6,9 +6,9 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:poisonous_potato",
-                    "functions": [
+                    "modifier": [
                         {
-                            "function": "minecraft:set_components",
+                            "type": "minecraft:set_components",
                             "components": {
                                 "minecraft:equippable": {
                                     "slot": "saddle",
@@ -18,7 +18,7 @@
                             }
                         },
                         {
-                            "function": "minecraft:set_enchantments",
+                            "type": "minecraft:set_enchantments",
                             "enchantments": {
                                 "justlib:movement/motion/x_2": {
                                     "type": "minecraft:storage",
