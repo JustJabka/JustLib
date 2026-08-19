@@ -1,0 +1,1 @@
+$data modify block ~ ~ ~ Items set from storage justlib:recipes static[$(mode)][$(page)]

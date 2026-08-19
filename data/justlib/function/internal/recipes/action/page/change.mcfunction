@@ -1,0 +1,2 @@
+execute store result score #pages main run function justlib:internal/recipes/page/get_amount with entity @s data
+execute store result entity @s data.page int 1 run scoreboard players operation #page main %= #pages main

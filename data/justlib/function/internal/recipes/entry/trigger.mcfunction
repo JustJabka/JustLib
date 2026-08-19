@@ -1,0 +1,2 @@
+execute if entity @s[advancements={justlib:recipes/open={open=true}}] run return run function justlib:internal/recipes/entry/success
+execute if entity @s[advancements={justlib:recipes/open={closed=true}}] run function justlib:internal/recipes/entry/fail

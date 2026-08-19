@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "justlib:item/gui/move_up_highlighted"
+    }
+}

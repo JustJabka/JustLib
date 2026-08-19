@@ -1,0 +1,1 @@
+$return run execute if data storage justlib:recipes static[$(mode)][]
