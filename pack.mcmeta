@@ -1,7 +1,7 @@
 {
   "pack": {
     "description": "Library for my datapacks with features I use often.",
-    "min_format": 116,
-    "max_format": 116
+    "min_format": 121,
+    "max_format": 121
   }
 }
