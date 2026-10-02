@@ -88,7 +88,8 @@
     },
     "health": {
         "depends": [
-            "shared"
+            "shared",
+            "math"
         ],
         "paths": [
             "justlib/advancement/health",
@@ -97,9 +98,7 @@
         ],
         "entrypoints": {
             "tick": [],
-            "load": [
-                "justlib/function/internal/health/load.mcfunction"
-            ],
+            "load": [],
             "tick_player": [],
             "load_player": []
         }
@@ -110,7 +109,8 @@
         ],
         "paths": [
             "justlib/function/api/math",
-            "justlib/function/internal/math"
+            "justlib/function/internal/math",
+            "justlib/predicate/math"
         ],
         "entrypoints": {
             "tick": [],

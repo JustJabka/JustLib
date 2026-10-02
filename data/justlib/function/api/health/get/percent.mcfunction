@@ -1,5 +1,4 @@
-function justlib:api/health/get/current
-function justlib:api/health/get/max
-scoreboard players operation @s justlib.health.current *= #100 const
+execute store result storage justlib:math a float 1 run function justlib:api/health/get/current
+execute store result storage justlib:math b float 1 run function justlib:api/health/get/max
 
-return run execute store result score @s justlib.health.percent run scoreboard players operation @s justlib.health.current /= @s justlib.health.max
+return run function justlib:api/math/div
