@@ -127,10 +127,8 @@
             "math"
         ],
         "paths": [
-            "justlib/enchantment/movement",
             "justlib/function/api/movement",
             "justlib/function/internal/movement",
-            "justlib/loot_table/internal/movement",
             "justlib/predicate/movement"
         ],
         "entrypoints": {
