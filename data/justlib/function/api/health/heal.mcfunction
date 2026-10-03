@@ -1,11 +1,13 @@
 # Input: justlib:health heal
 
+# Get values
 function justlib:api/health/get/current
 function justlib:api/health/get/max
 
+data modify storage justlib:math a set from storage justlib:health current
+data modify storage justlib:math b set from storage justlib:health max
+
 # # If no need to heal
-data modify storage justlib:math a set from storage justlib:health current_health
-data modify storage justlib:math b set from storage justlib:health max_health
 execute if predicate justlib:math/greater_or_equal_to run return fail
 
 # Heal Result = Current Health + Heal

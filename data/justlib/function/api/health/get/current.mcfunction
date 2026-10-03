@@ -1,1 +1,1 @@
-execute store result storage justlib:health current_health float 1 run return run scoreboard players get @s health
+execute store result storage justlib:health current float 1 run return run scoreboard players get @s health
