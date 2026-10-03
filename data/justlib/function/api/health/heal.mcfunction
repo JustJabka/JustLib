@@ -8,7 +8,7 @@ data modify storage justlib:math a set from storage justlib:health current
 data modify storage justlib:math b set from storage justlib:health max
 
 # If no need to heal
-execute if predicate justlib:math/greater_or_equal_to run return fail
+execute if predicate justlib:math/greater_or_equal run return fail
 
 # Heal Result = Current Health + Heal
 # Need To Heal = (Max Health - Heal Result) * -1
@@ -17,6 +17,6 @@ data modify storage justlib:health _heal set compute default float {type:"minecr
 # If this heal will fully heal the player, just fully heal
 data modify storage justlib:math a set from storage justlib:math _heal
 data modify storage justlib:math b set value 0
-execute if predicate justlib:math/less_or_equal_to run return run effect give @s minecraft:instant_health 1 252 true
+execute if predicate justlib:math/less_or_equal run return run effect give @s minecraft:instant_health 1 252 true
 
 function justlib:internal/health/heal
