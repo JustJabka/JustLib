@@ -1,4 +1,4 @@
-scoreboard players set #clear main 0
+data modify storage justlib:main clear set value false
 
 # Clearing player inventory and his bundles
 execute as @a run function justlib:internal/shared/clear

@@ -8,7 +8,7 @@ scoreboard players operation #this id = @s id
 execute store result score #changed main run data modify entity @s data.compare set from block ~ ~ ~ Items
 execute unless score #changed main matches 1 run return fail
 
-scoreboard players set #clear main 1
+data modify storage justlib:main clear set value true
 
 ## Return items
 execute in justlib:main positioned 0 0 0 run function justlib:internal/recipes/item/return

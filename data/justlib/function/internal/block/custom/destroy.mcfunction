@@ -1,5 +1,5 @@
 # Destroy all dummy items
-scoreboard players set #clear main 1
+data modify storage justlib:main clear set value true
 
 # Replace loot table of block
 data modify storage justlib:main block.loot_table set from entity @s data."justlib.block.loot_table"
