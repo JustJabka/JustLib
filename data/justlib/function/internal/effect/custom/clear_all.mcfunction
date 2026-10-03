@@ -1,4 +1,4 @@
-data modify storage justlib:main effect.cleared set from storage justlib:main player_data.active_effects[-1]
+data modify storage justlib:effect _.cleared set from storage justlib:main player_data.active_effects[-1]
 function justlib:internal/effect/custom/on/clear
 
 # Loop

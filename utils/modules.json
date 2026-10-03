@@ -63,7 +63,8 @@
     },
     "effect": {
         "depends": [
-            "shared"
+            "shared",
+            "math"
         ],
         "paths": [
             "justlib/advancement/effect",

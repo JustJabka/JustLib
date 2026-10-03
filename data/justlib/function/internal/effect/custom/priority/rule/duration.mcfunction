@@ -1,3 +1,2 @@
-scoreboard players operation #expires_at main = #duration_new main
-$execute store result storage justlib:main player_data.active_effects[{id:"$(id)"}].duration int 1 run scoreboard players get #duration_new main
-$execute store result storage justlib:main player_data.active_effects[{id:"$(id)"}].expires_at int 1 run scoreboard players operation #expires_at main += #gametime main
+$data modify storage justlib:main player_data.active_effects[{id:"$(id)"}].duration set from storage justlib:effect give.duration
+$data modify storage justlib:main player_data.active_effects[{id:"$(id)"}].expires_at set compute default integer {type:"minecraft:add",inputs:[{type:"minecraft:storage",storage:"justlib:main",path:"gametime"},{type:"minecraft:storage",storage:"justlib:effect",path:"give.duration"}]}
