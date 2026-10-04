@@ -1,5 +1,3 @@
-scoreboard objectives add main dummy
-
 scoreboard objectives add air air
 scoreboard objectives add armor armor
 scoreboard objectives add food food
