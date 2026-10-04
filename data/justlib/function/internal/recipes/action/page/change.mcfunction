@@ -1,2 +1,2 @@
-execute store result score #pages main run function justlib:internal/recipes/page/get_amount with entity @s data
-execute store result entity @s data.page int 1 run scoreboard players operation #page main %= #pages main
+execute store result storage justlib:recipes _.pages int 1 run function justlib:internal/recipes/page/get_amount with entity @s data
+data modify entity @s data.page set compute default integer {type:"minecraft:floor_mod",left:{type:"minecraft:storage",storage:"justlib:recipes",path:"_.page"},right:{type:"minecraft:storage",storage:"justlib:recipes",path:"_.pages"}}
