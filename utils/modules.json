@@ -78,9 +78,7 @@
             "tick": [
                 "justlib/function/internal/effect/tick.mcfunction"
             ],
-            "load": [
-                "justlib/function/internal/effect/load.mcfunction"
-            ],
+            "load": [],
             "tick_player": [
                 "justlib/function/internal/effect/custom/tick_player.mcfunction"
             ],

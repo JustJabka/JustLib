@@ -1,2 +1,2 @@
-execute if entity @s[scores={justlib.effect.freezing=1}] run return fail
-scoreboard players set @s justlib.effect.drowning 1
+execute if entity @s[tag=justlib.effect.freezing] run return fail
+tag @s add justlib.effect.drowning

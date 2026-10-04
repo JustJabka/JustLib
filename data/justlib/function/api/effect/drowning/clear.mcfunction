@@ -1,1 +1,1 @@
-scoreboard players set @s justlib.effect.drowning 0
+tag @s remove justlib.effect.drowning
