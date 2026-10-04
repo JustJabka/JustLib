@@ -110,14 +110,12 @@
         ],
         "paths": [
             "justlib/function/api/math",
-            "justlib/function/internal/math",
-            "justlib/predicate/math"
+            "justlib/predicate/math",
+            "justlib/context_float_provider/math"
         ],
         "entrypoints": {
             "tick": [],
-            "load": [
-                "justlib/function/internal/math/load.mcfunction"
-            ],
+            "load": [],
             "tick_player": [],
             "load_player": []
         }

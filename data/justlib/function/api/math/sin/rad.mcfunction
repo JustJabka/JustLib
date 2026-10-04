@@ -1,0 +1,1 @@
+return run data modify storage justlib:math out set compute default float {type:"minecraft:sin",input:{type:"minecraft:storage",storage:"justlib:math",path:"a"}}

@@ -1,4 +1,11 @@
-execute store result score $in justlib.math run data get entity @s Rotation[0] 10
-scoreboard players operation $in justlib.math += #angle justlib.movement
-execute store result storage justlib:main movement.unit_vec[0] float 0.001 run function justlib:api/math/cos/calc
-execute store result storage justlib:main movement.unit_vec[2] float 0.001 run function justlib:api/math/sin/calc
+data modify storage justlib:math a set from entity @s Rotation[0]
+data modify storage justlib:math b set from storage justlib:movement _.angle
+function justlib:api/math/add
+
+data modify storage justlib:math a set from storage justlib:math out
+
+function justlib:api/math/cos/deg
+data modify storage justlib:movement unit_vec[0] set from storage justlib:math out
+
+function justlib:api/math/sin/deg
+data modify storage justlib:movement unit_vec[2] set from storage justlib:math out

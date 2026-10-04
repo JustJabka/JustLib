@@ -1,0 +1,5 @@
+{
+    "type": "minecraft:div",
+    "left": "justlib:math/pi",
+    "right": 180
+}
