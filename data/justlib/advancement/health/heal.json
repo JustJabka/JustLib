@@ -25,7 +25,7 @@
                             "value": {
                                 "type": "minecraft:storage",
                                 "storage": "justlib:health",
-                                "path": "_healed"
+                                "path": "_.healed"
                             },
                             "test": 1
                         }
