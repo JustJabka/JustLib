@@ -147,7 +147,8 @@
             "justlib/advancement/recipes",
             "justlib/function/api/recipes",
             "justlib/function/internal/recipes",
-            "justlib/loot_table/blocks/crafting_table.json"
+            "justlib/loot_table/blocks/crafting_table.json",
+            "justlib/recipe/crafting_table.json"
         ],
         "entrypoints": {
             "tick": [],
