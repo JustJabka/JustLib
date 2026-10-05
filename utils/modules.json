@@ -150,9 +150,7 @@
             "justlib/loot_table/blocks/crafting_table.json"
         ],
         "entrypoints": {
-            "tick": [
-                "justlib/function/internal/recipes/tick.mcfunction"
-            ],
+            "tick": [],
             "load": [
                 "justlib/function/internal/recipes/load.mcfunction"
             ],

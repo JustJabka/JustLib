@@ -1,1 +1,0 @@
-execute as @e[type=minecraft:item_display,tag=justlib.recipes,tag=justlib.recipes.active] at @s run function justlib:internal/recipes/main

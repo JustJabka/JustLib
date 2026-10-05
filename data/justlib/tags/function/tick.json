@@ -2,7 +2,6 @@
     "values": [
         "justlib:internal/shared/tick",
         "justlib:internal/effect/tick",
-        "justlib:internal/block/tick",
-        "justlib:internal/recipes/tick"
+        "justlib:internal/block/tick"
     ]
 }

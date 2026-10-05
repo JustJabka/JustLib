@@ -1,3 +1,5 @@
+execute if entity @s[tag=!justlib.recipes.active] run return fail
+
 # On close
 execute if block ~ ~ ~ minecraft:barrel[open=false] run return run function justlib:internal/recipes/handler/close
 
@@ -15,5 +17,4 @@ execute in justlib:main positioned 0 0 0 run function justlib:internal/recipes/i
 
 # Actions
 function justlib:internal/recipes/action/trigger
-
 function justlib:internal/recipes/update
