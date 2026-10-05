@@ -140,7 +140,8 @@
     "recipes": {
         "depends": [
             "shared",
-            "block"
+            "block",
+            "math"
         ],
         "paths": [
             "justlib/advancement/recipes",
@@ -162,7 +163,8 @@
     },
     "sort": {
         "depends": [
-            "shared"
+            "shared",
+            "math"
         ],
         "paths": [
             "justlib/function/api/sort",
