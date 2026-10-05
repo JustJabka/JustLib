@@ -1,3 +1,5 @@
-$data modify storage justlib:main effect.cleared set from storage justlib:main player_data.active_effects[{id:"$(id)"}]
+$execute unless data storage justlib:main player_data.active_effects[{id:"$(id)"}] run return fail
+
+$data modify storage justlib:effect _.cleared set from storage justlib:main player_data.active_effects[{id:"$(id)"}]
 function justlib:internal/effect/custom/on/clear
 $data remove storage justlib:main player_data.active_effects[{id:"$(id)"}]

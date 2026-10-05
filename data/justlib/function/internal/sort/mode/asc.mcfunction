@@ -1,2 +1,2 @@
-execute if score #temp main < #mid main run return run data modify storage justlib:sort this.left append from storage justlib:sort this.temp[-1]
+execute if predicate justlib:math/less run return run data modify storage justlib:sort this.left append from storage justlib:sort this.temp[-1]
 data modify storage justlib:sort this.right append from storage justlib:sort this.temp[-1]

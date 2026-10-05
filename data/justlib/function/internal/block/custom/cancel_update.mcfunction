@@ -1,2 +1,2 @@
-data modify storage justlib:main block.place set from entity @s data."justlib.block.place"
-function justlib:api/block/custom/place with storage justlib:main block
+data modify storage justlib:block _.place set from entity @s data."justlib.block.place"
+function justlib:api/block/custom/place with storage justlib:block _

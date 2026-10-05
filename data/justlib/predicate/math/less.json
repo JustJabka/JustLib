@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:float_value_check",
+    "value": {
+        "type": "minecraft:sub",
+        "left": {
+            "type": "minecraft:storage",
+            "storage": "justlib:math",
+            "path": "a"
+        },
+        "right": {
+            "type": "minecraft:storage",
+            "storage": "justlib:math",
+            "path": "b"
+        }
+    },
+    "test": {
+        "max": -0.00000001
+    }
+}

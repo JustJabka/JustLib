@@ -9,7 +9,7 @@ run return run function justlib:internal/recipes/action/craft/give
 function justlib:internal/recipes/action/craft/loop/search with storage justlib:recipes ingredients[-1]
 
 # If player has not enough ingredient - cancel
-execute unless score #temp main matches 1 run return run playsound minecraft:entity.villager.no block @a[predicate=justlib:shared/id,limit=1]
+execute unless data storage justlib:recipes {_:{success:true}} run return run playsound minecraft:entity.villager.no block @a[predicate=justlib:shared/id,limit=1]
 
 # Take Ingredients
 function justlib:internal/recipes/action/craft/get_ingredients

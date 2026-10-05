@@ -1,1 +1,1 @@
-return run scoreboard players add #general_ id 1
+execute store result storage justlib:main id int 1 run return run scoreboard players get @s id

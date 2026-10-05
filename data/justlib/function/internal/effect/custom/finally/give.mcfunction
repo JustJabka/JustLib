@@ -1,8 +1,7 @@
 # Store all data
-data modify storage justlib:main player_data.active_effects append from storage justlib:main effect.give
+data modify storage justlib:main player_data.active_effects append from storage justlib:effect give
 
 # Calc expire stamp
-execute store result score #expires_at main run data get storage justlib:main effect.give.duration
-execute store result storage justlib:main player_data.active_effects[-1].expires_at int 1 run scoreboard players operation #expires_at main += #gametime main
+data modify storage justlib:main player_data.active_effects[-1].expires_at set compute default integer {type:"minecraft:add",inputs:[{type:"minecraft:storage",storage:"justlib:main",path:"gametime"},{type:"minecraft:storage",storage:"justlib:effect",path:"give.duration"}]}
 
 function justlib:internal/effect/custom/try/start

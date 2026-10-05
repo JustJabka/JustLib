@@ -1,0 +1,1 @@
+return run data modify storage justlib:math out set compute default float {type:"minecraft:add",inputs:[{type:"minecraft:storage",storage:"justlib:math",path:"a"},{type:"minecraft:storage",storage:"justlib:math",path:"b"}]}

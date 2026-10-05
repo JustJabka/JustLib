@@ -1,8 +1,7 @@
-execute store result score #modes main if data storage justlib:recipes static[]
-execute store result score #mode main run data get entity @s data.mode
+execute store result storage justlib:recipes _.modes int 1 if data storage justlib:recipes static[]
+data modify storage justlib:recipes _.mode set from entity @s data.mode
 
-scoreboard players add #mode main 1
-execute store result entity @s data.mode int 1 run scoreboard players operation #mode main %= #modes main
+data modify entity @s data.mode set compute default integer {type:"minecraft:floor_mod",left:{type:"minecraft:add",inputs:[{type:"minecraft:storage",storage:"justlib:recipes",path:"_.mode"},1]},right:{type:"minecraft:storage",storage:"justlib:recipes",path:"_.modes"}}
 
 function justlib:internal/recipes/action/page/change
 

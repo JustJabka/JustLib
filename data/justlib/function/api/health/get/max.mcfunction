@@ -1,1 +1,1 @@
-return run execute store result score @s justlib.health.max run attribute @s minecraft:max_health get
+execute store result storage justlib:health max float 1 run return run attribute @s minecraft:max_health get

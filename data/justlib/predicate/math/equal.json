@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:float_value_check",
+    "value": {
+        "type": "minecraft:storage",
+        "storage": "justlib:math",
+        "path": "a"
+    },
+    "test": {
+        "type": "minecraft:storage",
+        "storage": "justlib:math",
+        "path": "b"
+    }
+}

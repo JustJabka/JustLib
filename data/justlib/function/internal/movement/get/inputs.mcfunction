@@ -1,4 +1,5 @@
-execute if predicate justlib:movement/forward run scoreboard players add #dz justlib.movement 1
-execute if predicate justlib:movement/backward run scoreboard players remove #dz justlib.movement 1
-execute if predicate justlib:movement/right run scoreboard players remove #dx justlib.movement 1
-execute if predicate justlib:movement/left run scoreboard players add #dx justlib.movement 1
+execute if predicate justlib:movement/forward run data modify storage justlib:movement unit_vec[2] set compute default float {type:"minecraft:add",inputs:[{type:"minecraft:storage",storage:"justlib:movement",path:"unit_vec[2]"},1]}
+execute if predicate justlib:movement/backward run data modify storage justlib:movement unit_vec[2] set compute default float {type:"minecraft:sub",left:{type:"minecraft:storage",storage:"justlib:movement",path:"unit_vec[2]"},right:1}
+
+execute if predicate justlib:movement/left run data modify storage justlib:movement unit_vec[0] set compute default float {type:"minecraft:add",inputs:[{type:"minecraft:storage",storage:"justlib:movement",path:"unit_vec[0]"},1]}
+execute if predicate justlib:movement/right run data modify storage justlib:movement unit_vec[0] set compute default float {type:"minecraft:sub",left:{type:"minecraft:storage",storage:"justlib:movement",path:"unit_vec[0]"},right:1}

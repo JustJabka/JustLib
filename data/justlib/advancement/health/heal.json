@@ -23,12 +23,9 @@
                         {
                             "type": "minecraft:int_value_check",
                             "value": {
-                                "type": "minecraft:score",
-                                "score": "justlib.health",
-                                "target": {
-                                    "type": "minecraft:fixed",
-                                    "name": "#healed"
-                                }
+                                "type": "minecraft:storage",
+                                "storage": "justlib:health",
+                                "path": "_.healed"
                             },
                             "test": 1
                         }

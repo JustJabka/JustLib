@@ -5,10 +5,10 @@ execute if block ~ ~ ~ minecraft:barrel[open=false] run return run function just
 scoreboard players operation #this id = @s id
 
 ## Get changes
-execute store result score #changed main run data modify entity @s data.compare set from block ~ ~ ~ Items
-execute unless score #changed main matches 1 run return fail
+execute store result storage justlib:recipes _.changed byte 1 run data modify entity @s data.compare set from block ~ ~ ~ Items
+execute unless data storage justlib:recipes {_:{changed:true}} run return fail
 
-scoreboard players set #clear main 1
+data modify storage justlib:main clear set value true
 
 ## Return items
 execute in justlib:main positioned 0 0 0 run function justlib:internal/recipes/item/return

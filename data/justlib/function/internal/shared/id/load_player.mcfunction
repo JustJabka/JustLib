@@ -1,1 +1,1 @@
-execute store result score @s id run function justlib:api/shared/id/get
+execute store result score @s id run function justlib:api/shared/id/create

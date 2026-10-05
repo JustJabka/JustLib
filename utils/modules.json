@@ -63,7 +63,8 @@
     },
     "effect": {
         "depends": [
-            "shared"
+            "shared",
+            "math"
         ],
         "paths": [
             "justlib/advancement/effect",
@@ -77,9 +78,7 @@
             "tick": [
                 "justlib/function/internal/effect/tick.mcfunction"
             ],
-            "load": [
-                "justlib/function/internal/effect/load.mcfunction"
-            ],
+            "load": [],
             "tick_player": [
                 "justlib/function/internal/effect/custom/tick_player.mcfunction"
             ],
@@ -88,7 +87,8 @@
     },
     "health": {
         "depends": [
-            "shared"
+            "shared",
+            "math"
         ],
         "paths": [
             "justlib/advancement/health",
@@ -97,9 +97,7 @@
         ],
         "entrypoints": {
             "tick": [],
-            "load": [
-                "justlib/function/internal/health/load.mcfunction"
-            ],
+            "load": [],
             "tick_player": [],
             "load_player": []
         }
@@ -110,13 +108,12 @@
         ],
         "paths": [
             "justlib/function/api/math",
-            "justlib/function/internal/math"
+            "justlib/predicate/math",
+            "justlib/context_float_provider/math"
         ],
         "entrypoints": {
             "tick": [],
-            "load": [
-                "justlib/function/internal/math/load.mcfunction"
-            ],
+            "load": [],
             "tick_player": [],
             "load_player": []
         }
@@ -127,10 +124,8 @@
             "math"
         ],
         "paths": [
-            "justlib/enchantment/movement",
             "justlib/function/api/movement",
             "justlib/function/internal/movement",
-            "justlib/loot_table/internal/movement",
             "justlib/predicate/movement"
         ],
         "entrypoints": {
@@ -145,7 +140,8 @@
     "recipes": {
         "depends": [
             "shared",
-            "block"
+            "block",
+            "math"
         ],
         "paths": [
             "justlib/advancement/recipes",
@@ -167,7 +163,8 @@
     },
     "sort": {
         "depends": [
-            "shared"
+            "shared",
+            "math"
         ],
         "paths": [
             "justlib/function/api/sort",

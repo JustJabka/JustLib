@@ -1,19 +1,18 @@
-# effect.existing - alreay active effect on player
-# effect.give - effect that is tried to apply via API
+# effect.give - effect that is trying to apply via API (new)
+# effect.existing - already active effect on the player (old)
 
 # Get amplifier
-execute store result score #amplifier_old main run data get storage justlib:main effect.existing.amplifier
-execute store result score #amplifier_new main run data get storage justlib:main effect.give.amplifier
+data modify storage justlib:math a set from storage justlib:effect give.amplifier
+data modify storage justlib:math b set from storage justlib:effect existing.amplifier
 
-# If new effect is stronger than old
-execute if score #amplifier_new main > #amplifier_old main run return run function justlib:internal/effect/custom/priority/rule/amplifier
+# If new effect is stronger than old one
+execute if predicate justlib:math/greater run return run function justlib:internal/effect/custom/priority/rule/amplifier
 
 # Get duration
-execute store result score #duration_old main run data get storage justlib:main effect.existing.expires_at
-scoreboard players operation #duration_old main -= #gametime main
-execute store result score #duration_new main run data get storage justlib:main effect.give.duration
+data modify storage justlib:math a set from storage justlib:effect give.duration
+data modify storage justlib:math b set compute default integer {type:"minecraft:sub",left:{type:"minecraft:storage",storage:"justlib:effect",path:"existing.expires_at"},right:{type:"minecraft:storage",storage:"justlib:main",path:"gametime"}}
 
-# If new effect is longer than old
-execute if score #duration_new main > #duration_old main run return run function justlib:internal/effect/custom/priority/rule/duration with storage justlib:main effect.existing
+# If new effect is longer than old one
+execute if predicate justlib:math/greater run return run function justlib:internal/effect/custom/priority/rule/duration with storage justlib:effect existing
 
 # Ignoring new effect if it's too weak
