@@ -1,0 +1,2 @@
+execute if predicate justlib:shared/has_vehicle on vehicle run return run function justlib:internal/shared/get_entity_type/vehicle
+execute summon minecraft:text_display run function justlib:internal/shared/get_entity_type/no_vehicle
