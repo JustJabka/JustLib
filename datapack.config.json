@@ -1,0 +1,17 @@
+{
+    "rules": {
+        "disabled": [
+            "scoreboard-fake-player-missing-hash",
+            "target-selector-type-order"
+        ]
+    },
+    "executeGroup": {
+        "outputPath": "{dir}",
+        "outputName": "{name}_line_{line}"
+    },
+    "namingConvention": {
+        "scoreboardObjective": "^[a-z][a-z0-9.]*[a-z0-9]$",
+        "tag": "^[a-z][a-z0-9.]*[a-z0-9]$",
+        "team": "^[a-z][a-z0-9.]*[a-z0-9]$"
+    }
+}
