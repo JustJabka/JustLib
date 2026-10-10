@@ -1,0 +1,1 @@
+execute summon minecraft:armor_stand run function justlib:internal/shared/get_default_component/from/block

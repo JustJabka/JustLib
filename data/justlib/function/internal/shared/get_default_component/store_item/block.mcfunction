@@ -1,0 +1,1 @@
+$return run item replace entity @s weapon.mainhand from block ~ ~ ~ $(in)

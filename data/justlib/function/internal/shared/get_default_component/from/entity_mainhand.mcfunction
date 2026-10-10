@@ -1,0 +1,2 @@
+loot replace entity 00000000-0000-0000-0000-000000000001 contents fish {pools:[{rolls:1,entries:[{type:"minecraft:item",name:"minecraft:poisonous_potato",modifier:{type:"minecraft:copy_components",source:"tool"}}]}]} ~ ~ ~ mainhand
+data modify storage justlib:main out set from entity 00000000-0000-0000-0000-000000000001 item.components
